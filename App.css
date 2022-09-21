@@ -1,0 +1,130 @@
+:root {
+  --low-black: rgb(47, 36, 36);
+  --lower-black: rgb(161, 75, 64);
+  --orange: rgb(255, 136, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body, #root {
+  height: 100%;
+  background-color: rgba(181, 174, 174);
+}
+
+header {
+  background-color: var(--low-black);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wholeLogo {
+  position: relative;
+  left: -7%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.nomeSite {
+  color: var(--orange);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+.busca {
+  height: 8vh;
+  background-color: var(--lower-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spanBusca {
+  height: 50%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: .3rem;
+}
+
+.spanBusca input {
+  display: inline;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: .3rem;
+}
+
+.lengthODAS {
+  padding: .1rem 0 .5rem 0;
+  background-color: var(--lower-black);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.boxFlexivel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxODAS {
+  max-height: 50rem;
+  width: 30%;
+  grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
+  margin: 1rem;
+}
+
+.blockODAS {
+  height: 100%;
+  width: 100%;
+}
+
+.dadosODA {
+  display: grid;
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 .3rem .1rem var(--lower-black);
+  background-color: rgba(220, 255, 255, 0.11);
+  background-color: #fff;
+  gap: 30px;
+}
+
+.dadosODA * {
+  margin: .5rem;
+}
+
+.dadosODA {
+  max-height: 50rem;
+  margin: 1rem;
+  opacity: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  color: #fff;
+  background-color: var(--low-black);
+}
